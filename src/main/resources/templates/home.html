@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <title>Dohyun's Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,9 +60,11 @@
 	</div>
 
 	<div class="w3-row-padding w3-center w3-margin-top">
+		
+		<a th:href="@{/resume}">
 		<div class="w3-third">
 			<div class="w3-card w3-container" style="min-height: 460px">
-				<h3>Responsive</h3>
+				<h3>이력서</h3>
 				<br> <i class="fa fa-desktop w3-margin-bottom w3-text-theme"
 					style="font-size: 120px"></i>
 				<p>Built-in responsiveness</p>
@@ -71,10 +73,12 @@
 				<p>PC Tablet and Mobile</p>
 			</div>
 		</div>
-
+		</a>
+		
+		<a th:href="@{/viewer}">
 		<div class="w3-third">
 			<div class="w3-card w3-container" style="min-height: 460px">
-				<h3>Standard CSS</h3>
+				<h3>뷰어</h3>
 				<br> <i class="fa fa-css3 w3-margin-bottom w3-text-theme"
 					style="font-size: 120px"></i>
 				<p>Standard CSS only</p>
@@ -83,7 +87,8 @@
 				<p>No JavaScript library</p>
 			</div>
 		</div>
-
+		</a>
+		
 		<div class="w3-third">
 			<div class="w3-card w3-container" style="min-height: 460px">
 				<h3>Standard CSS</h3>
