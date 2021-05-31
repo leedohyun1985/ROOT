@@ -64,27 +64,23 @@
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-screen-smartphone"></i></span>
-                        <h4><strong>Responsive</strong></h4>
-                        <p class="text-faded mb-0">Looks great on any screen size!</p>
+                        <h4><strong>가벼운</strong></h4>
+                        <p class="text-faded mb-0"><a href="https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%84%9C%EB%B9%84%EC%8A%A4" style=" color:white; text-decoration: none;">MSA</a>로 더욱 가볍게</p>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-pencil"></i></span>
-                        <h4><strong>Redesigned</strong></h4>
-                        <p class="text-faded mb-0">Freshly redesigned for Bootstrap 5.</p>
+                        <h4><strong>빠른</strong></h4>
+                        <p class="text-faded mb-0">최신의 템플릿 엔진으로 더 빠르게</p>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-like"></i></span>
-                        <h4><strong>Favorited</strong></h4>
-                        <p class="text-faded mb-0">
-                            Millions of users
-                            <i class="fas fa-heart"></i>
-                            Start Bootstrap!
-                        </p>
+                        <h4><strong>안정적인</strong></h4>
+                        <p class="text-faded mb-0">이미 검증된 안정적인 프레임워크로</p>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-mustache"></i></span>
-                        <h4><strong>Question</strong></h4>
-                        <p class="text-faded mb-0">I mustache you a question...</p>
+                        <h4><strong>안전한</strong></h4>
+                        <p class="text-faded mb-0">암호화, 인증, 권한관리로 더욱 안전한</p>
                     </div>
                 </div>
             </div>
@@ -94,10 +90,10 @@
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mx-auto mb-5">
                     Welcome to
-                    <em>your</em>
-                    next website!
+                    <em>Dohyun's</em>
+                    Lab!
                 </h2>
-                <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download Now!</a>
+                <a class="btn btn-primary btn-xl" href="#portfolio">Download Now!</a>
             </div>
         </section>
         <!-- Portfolio-->
@@ -112,7 +108,7 @@
                         <a class="portfolio-item" th:href="@{/resume}">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2"><i class="bi bi-file-earmark-person"></i> 이력서 홈페이지</div>
+                                    <div class="h2">이력서 홈페이지</div>
                                     <p class="mb-0">
                                     제 이력과 관련 정보를 담고 있는 홈페이지 입니다.
 									<br>
@@ -126,27 +122,40 @@
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <a class="portfolio-item" th:href="@{/viewer}">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Ice Cream</div>
-                                    <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                                    <div class="h2">PDF/Image Viewer</div>
+                                    <p class="mb-0">
+                                    학습자료를 어디서든 볼 수 있도록 이미지/PDF 뷰어 기능을 구현하고 있습니다.
+                                    <br>
+									Framework : Spring boot
+									<br>
+									Template engine : Thymeleaf
+                                    </p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <a class="portfolio-item" th:href="@{/spring-security}">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Strawberries</div>
-                                    <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                                    <div class="h2">Spring Security</div>
+                                    <p class="mb-0">
+                                    스프링에서 제공하는 각종 보안 기능들을 적용하였습니다.
+                                    <br>
+									Framework : Spring boot
+									<br>
+									Template engine : Thymeleaf
+                                    </p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
                         </a>
                     </div>
+                    <!-- 
                     <div class="col-lg-6">
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
@@ -158,20 +167,21 @@
                             <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
                         </a>
                     </div>
+                     -->
                 </div>
             </div>
         </section>
         <!-- Call to Action-->
         <section class="content-section bg-primary text-white">
             <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
-                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
+                <h2 class="mb-4">현재의 근무지는...</h2>
+<!--                 <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
+                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a> -->
             </div>
         </section>
         <!-- Map-->
         <div class="map" id="contact">
-            <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d470.39886027866083!2d126.88917257172152!3d37.52080045812691!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa6a88cc52747434a!2zR1PqsJXshJztg4Dsm4w!5e0!3m2!1sko!2skr!4v1622462916416!5m2!1sko!2skr"></iframe>
             <br />
             <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
         </div>
@@ -192,7 +202,7 @@
                         <a class="social-link rounded-circle text-white" href="https://www.linkedin.com/in/leedohyun1985"><i class="icon-social-linkedin"></i></a>
                     </li>
                 </ul>
-                <p class="text-muted small mb-0">Copyright &copy; Your Website 2021</p>
+                <p class="text-muted small mb-0">Copyright &copy; Lee Dohyun 2021</p>
             </div>
         </footer>
         <!-- Scroll to Top Button-->
