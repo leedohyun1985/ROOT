@@ -18,16 +18,16 @@ public class I18nConfig implements WebMvcConfigurer {
 	@Bean
 	LocaleResolver localeResolver() {
 		SessionLocaleResolver sessionLocaleResolver = new SessionLocaleResolver();
-		sessionLocaleResolver.setDefaultLocale(Locale.KOREAN);
+		sessionLocaleResolver.setDefaultLocale(Locale.KOREA);
 		return sessionLocaleResolver;
 	}
 
-	@Bean
-	LocaleChangeInterceptor localeChangeInterceptor() {
-		LocaleChangeInterceptor localeChangeInterceptor = new LocaleChangeInterceptor();
-		localeChangeInterceptor.setParamName("lang");
-		return localeChangeInterceptor;
-	}
+    @Bean
+    LocaleChangeInterceptor localeChangeInterceptor() {
+        LocaleChangeInterceptor localeChangeInterceptor = new LocaleChangeInterceptor();
+        localeChangeInterceptor.setParamName("lang");
+        return localeChangeInterceptor;
+    }
 
 	@Bean
 	MessageSource messageSource() {
